@@ -1,4 +1,4 @@
 # spookit
 ### Hack for good
 
-Reddit for your ears
+Reddit for your ears!
