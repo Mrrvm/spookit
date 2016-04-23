@@ -1,103 +1,80 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-<!-- /.website title -->
-<title>Backyard Landing Page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Ponto - Página inicial</title>
 
-<!-- CSS Files -->
-<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
-<link href="css/animate.css" rel="stylesheet" media="screen">
-<link href="css/owl.theme.css" rel="stylesheet">
-<link href="css/owl.carousel.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+        <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<!-- Colors -->
-<link href="css/css-index.css" rel="stylesheet" media="screen">
-<!-- <link href="css/css-index-green.css" rel="stylesheet" media="screen"> -->
-<!-- <link href="css/css-index-purple.css" rel="stylesheet" media="screen"> -->
-<!-- <link href="css/css-index-red.css" rel="stylesheet" media="screen"> -->
-<!-- <link href="css/css-index-orange.css" rel="stylesheet" media="screen"> -->
-<!-- <link href="css/css-index-yellow.css" rel="stylesheet" media="screen"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-<!-- Google Fonts -->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
-</head>
-  
-<body data-spy="scroll" data-target="#navbar-scroll">
+    <link href="css/listing.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 
-<!-- /.preloader -->
-<div id="preloader"></div>
- <div id="top"></div>
+  </head>
 
-<!-- /.parallax full screen background image -->
-<div class="fullscreen landing parallax" style="background-image:url('images/HNCK3991.jpg');" data-img-width="2000" data-img-height="1333" data-diff="100">
-<!-- NAVIGATION -->
-<div id="menu">
-	<nav class="navbar-wrapper navbar-default" role="navigation">
-		<div class="container">
-			  <div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-backyard">
-				  <span class="sr-only">Toggle navigation</span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand site-name" href="index.html"><img src="images/logo.png" alt="logo"></a>
-			  </div>
-	 
-			  <div id="navbar-scroll" class="collapse navbar-collapse navbar-backyard navbar-right">
-				<ul class="nav navbar-nav">
-					<li><a href="entrar.html">Entrar</a></li>
-					<li><a href="sobre.html">Sobre</a></li>
-				</ul>
-			  </div>
-		</div>
-	</nav>
-</div>
+  <body>
 
-	<div class="overlay">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1 text-center">
-				
-					<!-- /.main title -->
-						<h1 class="wow fadeInLeft">
-						Entrar
-						</h1>		  
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+      	<div class="row">
+          <div class="col-md-6">
+            <img src="images/logo2.png" alt="image" href="index.html" class="img-responsive">
+          </div>
+          <div class="col-md-6">
+            <h1><font size=15>Entrar na sua conta</font></h1>
+            <a href="registar.html"><font size=5>Ainda não se registou? Clique aqui</font></a>
+          </div>
+	     </div>
+      </div>
+    </div>
 
 
-				</div> 
-			</div>
-		</div> 
-	</div> 
-</div>
+    <div class="wrapper">
+      <form class="form-signin">       
+        <h3 class="form-signin-heading">Inserir nome de utilizador</h3>
+          <input type="text" class="form-control" name="username" placeholder="Nome de utilizador" required="" autofocus="" />
+        <h3 class="form-signin-heading">Inserir palavra-passe</h3>
+          <input type="password" class="form-control" name="password" placeholder="Palavra-passe" required=""/>      
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Lembrar-se da minha conta na próxima sessão
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+      </form>
+    </div>
 
+    <footer>
+      <div class="jumbotron">
+        <div class="container">
+            <div class="col-md-4">
+                <img src="images/logo.png" alt="image" href="index.html" class="img-responsive">
+            </div>
+            <div class="col-xs-4">
+              <a href="index.html"><font size=5>©2016 Ponto. Acrescente o seu.</font></a>
+            </div>
+            <div class="col-xs-4">
+              <a href="contactar-nos.html"><font size=5><i class="fa fa-envelope fa-1x"> Tem dúvidas? Contacte</font></a></i>
+            </div>
+        </div>
+      </div>
+    </footer>
 
-  
-<!-- /.footer -->
-<footer id="footer">
-	<div class="container">
-		<div class="col-sm-4 col-sm-offset-4">
-			<!-- /.social links -->
-			<div class="text-center wow fadeInUp" style="font-size: 14px;">All rights reserved @ Spookit 2016</a></div>
-			<a href="#" class="scrollToTop"><i class="pe-7s-up-arrow pe-va"></i></a>
-		</div>	
-	</div>	
-</footer>
-	
-	<!-- /.javascript files -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script>
-		new WOW().init();
-	</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 </html>
