@@ -1,0 +1,131 @@
+/**
+* Backyard
+* Documentation
+* Author: MoxDesign - http://www.moxdesign.com
+**/
+
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+body {
+	height:100%;
+	font-family: "Lato", "Serif";
+	font-weight: 300;
+	padding:0;
+	margin:0;
+	font-size:16px;
+	line-height: 28px;
+	color: #777; 
+	background: #fff;
+	overflow-x:hidden;
+	position: relative;
+}
+h1 { font-size: 3em; line-height:1.2em; margin:0 0 .3em; }
+h2 { font-size: 1.8em; line-height:1.4em; margin:0 0 .3em;  }
+h3 { font-size: 1.4em; line-height:1.4em; }
+h4 { font-size: 1.25em; line-height:1.4em;}
+h5 { font-size: 1.1em; line-height:1.4em; }
+h6 { font-size: 1em; line-height:1.2em; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration: none
+}	 
+p { 
+	padding: 0 0 1em;
+	margin:0;
+}
+a {
+	color: #3eb0f7;
+	outline: 0;
+	font-weight: bold;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+} 
+a:hover {
+	text-decoration: none;
+	color: #1f2222;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
+}
+.highlight {
+	color: #3eb0f7;
+}
+#preloader { 
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	z-index: 999; 
+	width: 100%; 
+	height: 100%; 
+	overflow: visible; 
+	background: #fff url(../images/loading.gif) no-repeat center center;
+}
+.fullscreen {
+    width:100%;
+    min-height:100%;
+	background-repeat:no-repeat;
+    background-position:50% 50%;
+    background-position:50% 50%\9 !important;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#menu {
+	z-index: 99;
+}
+.navbar-default {
+	background: rgba(255, 255, 255, 0.95);
+	box-shadow: 0px 0.5px 2px #cecece;
+}
+.navbar-default .navbar-brand {
+    padding: 7px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+	font-weight: 500;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #3eb0f7;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	background: transparent;
+    color: #3eb0f7;
+}
+.site-name img {
+	width: 150px; 
+	height: 37px
+}
+.logo {
+	margin: 100px 0 40px 0;
+}
+.logo img{
+	width: 150px; 
+	height: 37px
+}
+.landing h1{
+	font-size: 56px;
+	font-weight: 300;
+	color: #fff;
+	margin: 30px 0 30px 0;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.landing p, .landing h2 {
+	color: #fff;
+}
+.landing-text {
+	margin-bottom: 20px;
+}
+.landing-text p {
+	font-size: 17px !important; 
+}
+#color, #navigation, #change-logo, #change-bg, #mailchimp, #icon, #contact, #support {
+	padding-top: 55px;
+}
