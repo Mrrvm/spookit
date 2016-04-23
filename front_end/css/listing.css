@@ -21,6 +21,12 @@
   text-decoration: none;
 }
 
+.category-icon:visited {
+  cursor: default;
+	border: none;
+	background: #3eb0f7;
+	color: white;
+}
 .fa {
   margin-bottom: 10px;
 }
