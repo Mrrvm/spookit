@@ -1,23 +1,26 @@
-$('.category-button').each(function(){
-    //if statement here
-    // use $(this) to reference the current div in the loop
-    //you can try something like...
-  var i=0;
-
-
-  i=i+1;
-});
 
 $('.category-button').addClass(function( index ) {
   return "category-" + index;
   });
 
 $('.category-button').each( function(index) {
-    $(this).click( function() {
-      $( '.row' ).fadeOut( "slow", function() {
-      // Animation complete.
-      });
+  $(this).click( function() {
+    this_text = $(this).find("p").text();
+    console.log("Nome da categoria: " + this_text);
+    $( '.button_container' ).slideUp( "fast", function() {
+    // Animation complete.
     });
+
+    $('.thread-container_text').text(this_text);
+    $('.thread-container').removeClass("hidden");
+  });
+
+});
+
+$( '.back-button' ).click(function() {
+  $('.thread-container').addClass("hidden");
+  $('.button_container').slideDown( "fast", function(){
+  });
 
 });
 

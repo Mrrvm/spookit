@@ -1,6 +1,16 @@
+.thread-container_text {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 6em;
+  font-weight: 800;
+  margin-top: 20px;
+  height: 53px;
+  line-height: 53px;
+  margin-bottom: 0px;
+}
+
 .category-icon {
-	font-size: 20px;
-	font-weight: 300;
+	font-size: 25pt;
+	font-weight: 500;
 	line-height: 20px;
 	padding: 20px 50px;
 	border: none;
@@ -22,14 +32,27 @@
 }
 
 .category-icon:visited {
-  cursor: default;
+	line-height: 20px;
+	padding: 20px 50px;
 	border: none;
 	background: #3eb0f7;
+	transition: all 0.4s;
 	color: white;
+	border-radius: 4px;
 }
 .fa {
   margin-bottom: 10px;
 }
 .row {
   margin-bottom: 30px;
+}
+
+.back-button {
+  font-weight: bold;
+  font-size: 20pt;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  cursor: pointer;
 }
