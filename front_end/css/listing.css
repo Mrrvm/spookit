@@ -81,3 +81,12 @@
 .back-button:hover {
   cursor: pointer;
 }
+
+.logo {
+  margin-top: 15px;
+}
+.user_image {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
