@@ -32,8 +32,8 @@
             <img src="images/logo2.png" alt="image" href="index.html" class="img-responsive">
           </div>
           <div class="col-md-6">
-            <h1><font size=15>Entrar na sua conta</font></h1>
-            <a href="registar.html"><font size=5>Ainda não se registou? Clique aqui</font></a>
+            <h1>Entrar na sua conta</h1>
+            <a href="#" data-toggle="modal" data-target="#PostCommentsModal"><font size=6>Ainda não se registou? Clique aqui</font></a>
           </div>
 	     </div>
       </div>
@@ -49,9 +49,72 @@
         <label class="checkbox">
           <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Lembrar-se da minha conta na próxima sessão
         </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+        <div class="category-icon" type="submit">
+          <div class="text-center">
+              <p><font size=6>Submeter<font></p>   
+          </div>
+        </div>   
       </form>
     </div>
+
+    <div class="modal fade" id="PostCommentsModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">      
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Fechar janela</span></button>
+            <div>
+            <img src="images/logo.png" alt="image" href="index.html" class="img-responsive" align="middle">
+            <hr>
+            <h1 class="modal-title" id="myModalLabel" align="middle">Criar conta</h1>
+            </div>
+        </div>
+    <div class="modal-body">
+      <h3 class="form-signin-heading">Inserir nome de utilizador</h3>
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+          <input type="text" class="form-control input-lg" name="realname" placeholder="Nome e apelido"/>
+      </div>
+      <p>
+      </p>
+      <h3 class="form-signin-heading">Inserir email</h3>
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          <input type="text" class="form-control input-lg" name="email" placeholder="Email"/>
+      </div>
+      <p>
+      </p>
+      <h3 class="form-signin-heading">Inserir palavra-passe</h3>
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+          <input type="text" class="form-control input-lg" name="password" placeholder="Palavra-passe"/>
+      </div>
+      <p>
+      </p>
+      <h3 class="form-signin-heading">Confirmar palavra-passe</h3>
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+      <input type="text" class="form-control input-lg" name="password" placeholder="Palavra-passe"/>
+      </div>
+      <p>
+      </p>
+</textarea>
+      </div>
+      <p>
+      </p>
+      <div class="modal-footer">
+          <div class="category-icon" type="submit">
+              <div class="text-center">
+                <p><font size=6>Submeter<font></p>   
+              </div>
+          </div>  
+      </div>
+          </div>
+              </div>
+          </div>
+      </div>
+
 
     <footer>
       <div class="jumbotron">
