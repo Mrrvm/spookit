@@ -116,18 +116,18 @@
   background: lightgray;
 }
 
-.thread-item > a {
+.thread-item a {
   color: black;
   font-size: 2em;
   font-weight: 500;
 }
 
-.thread-item > a:hover {
+.thread-item a:hover {
   text-decoration: none;
 
 }
 
-.thread-item > a:visited {
+.thread-item a:visited {
   text-decoration: none;
   color: black;
 }

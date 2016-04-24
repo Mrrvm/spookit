@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Ponto - O meu perfil</title>
+
+    <!-- Bootstrap core CSS -->
+        <!-- Bootstrap -->  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <link href="css/listing.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+    <script type="text/javascript" src="js/profile_aux.js"></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-listing navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="images/logo.png" alt="image" href="index.html" class="logo">
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <img src="images/user.png" class="user_image" href="index.html" >
+            <i class="fa fa-navbar-user fa-navbar fa-2x" aria-hidden="true"> User</i>
+            <i class="fa fa-sign-in fa-navbar fa-2x" aria-hidden="true"> Sair</i>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+  <div class="container">
+    <div class = profile-container>
+      <div class="row">
+          <div class="col-md-6">
+              <div id="userphoto"><img src="images/user.png" alt="default avatar"></div>
+          </div>
+          <div class="col-md-6">
+            <div id="content" class="clearfix">
+      	 			<h1><font size=20>Felismina Martins</font></h1>
+
+      	 			<section id="bio" class="hidden">
+              bio      
+              </section>
+
+              <section id="activity" class="hidden">
+              ou na actividade
+              </section>
+            
+              <section id="topics" class="hidden">
+              t
+              </section>
+           	</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+
+      <nav id="profiletabs">
+            <ul class="clearfix">
+              <li><a href="#bio" class="sel">Biografia</a></li>
+              <li><a href="#activity" class="sel">Actividade</a></li>
+              <li><a href="#settings" class="sel">Editar perfil</a></li>
+              <li><a href="listing.html" class="sel">Ver tópicos</a></li>
+            </ul>
+      </nav>
+
+
+  
+
+   <footer>
+      <div class="jumbotron">
+      <div class="container">
+          <div class="col-md-4">
+              <img src="images/logo.png" alt="image" href="index.html" class="img-responsive">
+          </div>
+          <div class="col-xs-4">
+            <a href="index.html"><font size=5>©2016 Ponto. Acrescente o seu.</font></a>
+          </div>
+          <div class="col-xs-4">
+            <a href="contactar-nos.html"><font size=5><i class="fa fa-envelope fa-1x"> Tem dúvidas? Contacte</font></a></i>
+          </div>
+        </div>
+    </footer>
+
+<script type="text/javascript">
+$(function(){
+  $('#profiletabs ul li a').on('click', function(e){
+    e.preventDefault();
+    var newcontent = $(this).attr('href');
+    
+    $('#profiletabs ul li a').removeClass('sel');
+    $(this).addClass('sel');
+    
+    $('#content section').each(function(){
+      if(!$(this).hasClass('hidden')) { $(this).addClass('hidden'); }
+    });
+    
+    $(newcontent).removeClass('hidden');
+  });
+});
+</script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/profile.js"></script>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

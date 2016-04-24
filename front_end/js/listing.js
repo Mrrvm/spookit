@@ -3,10 +3,9 @@ $('.category-button').each( function(index) {
     this_text = $(this).find("p").text();
     console.log("Nome da categoria: " + this_text);
     $( '.button-container' ).slideUp( "fast", function() {
-    // Animation complete.
     });
 
-  $.get( "http://172.17.108.101:9000/stories", { theme: "cultura"}).done(function( data ) {
+  $.get( "http://172.17.108.101:9000/stories", { theme: this_text }).done(function( data ) {
 	  var json_obj = $.parseJSON(data);
     for (var i in json_obj) {
       $('.thread-links').append('<div class="thread-item" id="item-' + i + '"></div>');
