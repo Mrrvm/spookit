@@ -87,7 +87,8 @@
 
         <div class="row board-controls">
           <div class="col-xs-4" id="new-story-btn">
-            <div class="category-icon">
+            <div class="category-icon" href="#" data-toggle="modal" data-target="#PostCommentsModal">
+              
               <i class="fa fa-plus fa-controls" aria-hidden="true"> Novo tópico</i>
             </div>
           </div>
@@ -103,6 +104,49 @@
 
         </div>
       </div>
+
+      <!--/.pop-up -->
+    <div class="modal fade" id="PostCommentsModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">      
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Fechar janela</span></button>
+            <div>
+            <img src="images/logo.png" alt="image" href="index.html" class="img-responsive" align="middle">
+            <hr>
+            <h1 class="modal-title" id="myModalLabel" align="middle">Criar Tópico</h1>
+            </div>
+        </div>
+    <div class="modal-body">
+      <h3 class="form-signin-heading">Inserir título do tópico</h3>
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+          <input type="text" class="form-control input-lg" name="topic-name" placeholder="Título do tópico"/>
+      </div>
+      <p>
+      </p>
+      <h3 class="form-signin-heading">Descrição do Tópico</h3>
+      <div class="input-group">
+         <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+         <textarea rows="4" cols="50" class="form-control" placeholder="Descrição do tópico"/>
+         </textarea>
+      </div>
+      <p>
+      </p>
+      <div class="modal-footer">
+          <div class="category-icon" type="submit">
+              <div class="text-center">
+                <p><font size=6>Submeter<font></p>   
+              </div>
+          </div>  
+      </div>
+          </div>
+              </div>
+          </div>
+      </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/listing.js"></script>
