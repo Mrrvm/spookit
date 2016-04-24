@@ -67,6 +67,11 @@
 
 .fa-navbar-user {
   margin-right: 20px;
+
+}
+
+.fa-navbar-user:hover {
+  cursor: pointer;
 }
 .row {
   margin-bottom: 30px;
@@ -92,6 +97,9 @@
   height: 75px;
 }
 
+.user_image:hover {
+  cursor: pointer;
+}
 .thread-item {
   border-style: solid;
   border-color: black;
@@ -123,3 +131,17 @@
   text-decoration: none;
   color: black;
 }
+
+.fa-sign-in:hover {
+  cursor: pointer;
+}
+
+.fa-controls {
+  margin-bottom: 0px;
+  font-size: 0.8em;
+}
+
+.board-controls {
+  margin-top: 30px;
+}
+
