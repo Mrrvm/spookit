@@ -1,25 +1,53 @@
-$.post( "http://172.17.108.101:9000/stories", {user: "username"} )
-.done(function( data ) {
-  console.log( "Data Loaded: " + data );
-  });
+$( '.e-submit-form' ).click(function() {
+  var user;
+  var pass;
 
-$.post( "http://172.17.108.101:9000/stories", {password: "password"} )
-.done(function( data ) {
-  console.log( "Data Loaded: " + data );
-  });
+  user = $('.login_name').val();
+  pass = $('.login_pass').val();
+  console.log(user);
+  console.log(pass);
 
-$.post( "http://172.17.108.101:9000/stories", {email: "email"} )
-.done(function( data ) {
-  console.log( "Data Loaded: " + data );
-  });
-
-$( '.back-button' ).click(function() {
-  $('.thread-container').addClass("hidden");
-  $('.button-container').slideDown( "fast", function(){
+  $.post( "http://172.17.108.101:9000/users", { user: user , log_type: "1" , password: pass}).done(function( data ) {
+	  var json_obj = $.parseJSON(data);
   });
 
 });
 
 $(document).ready(function() {
+  console.log("Page loaded");
+});
 
+$( '.r-submit-form' ).click(function() {
+  var user;
+  var pass;
+  var email;
+  var conf_pass;
+
+  user = $('.r-username').val();
+  pass = $('.r-pass').val();
+  conf_pass = $('.r-confirm-pass').val();
+  email =  $('.r-email').val();
+  console.log(user);
+  console.log(pass);
+  console.log(email);
+
+
+  if( pass == conf_pass ) {
+      // PUTS
+      $.ajax({
+	  url: "http://172.17.108.101:9000/users",
+	  type: 'PUT',
+	  success: function(response) {
+	      console.log(response)
+	  },
+	  data: {user: user, password: pass, email: email}
+      });
+  } else {
+    alert("Passwords do not match");
+  }
+
+});
+
+$(document).ready(function() {
+  console.log("Page loaded");
 });

@@ -41,24 +41,24 @@
 
 
     <div class="wrapper">
-      <form class="form-signin">       
+      <form class="form-signin">
         <h3 class="form-signin-heading">Inserir nome de utilizador</h3>
-          <input type="text" class="form-control" name="username" placeholder="Nome de utilizador" required="" autofocus="" />
+          <input type="text" class="form-control login_name" name="username" placeholder="Nome de utilizador" required="" autofocus="" />
         <h3 class="form-signin-heading">Inserir palavra-passe</h3>
-          <input type="password" class="form-control" name="password" placeholder="Palavra-passe" required=""/>      
+          <input type="password" class="form-control login_pass" name="password" placeholder="Palavra-passe" required=""/>
         <label class="checkbox">
-          <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Lembrar-se da minha conta na próxima sessão
+          <input id="kek_box" type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Lembrar-se da minha conta na próxima sessão
         </label>
-        <div class="category-icon" type="submit">
-          <div class="text-center">
-              <p><font size=6>Submeter<font></p>   
+        <div class="category-icon">
+          <div class="text-center e-submit-form">
+              <p><font size=6>Submeter<font></p>
           </div>
-        </div>   
+        </div>
       </form>
     </div>
 
     <div class="modal fade" id="PostCommentsModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
-    <div class="modal-dialog">      
+    <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">
@@ -74,28 +74,28 @@
       <h3 class="form-signin-heading">Inserir nome de utilizador</h3>
       <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-          <input type="text" class="form-control input-lg" name="realname" placeholder="Nome e apelido"/>
+          <input type="text" class="form-control input-lg r-username" name="realname" placeholder="Nome e apelido"/>
       </div>
       <p>
       </p>
       <h3 class="form-signin-heading">Inserir email</h3>
       <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-          <input type="text" class="form-control input-lg" name="email" placeholder="Email"/>
+          <input type="text" class="form-control input-lg r-email" name="email" placeholder="Email"/>
       </div>
       <p>
       </p>
       <h3 class="form-signin-heading">Inserir palavra-passe</h3>
       <div class="input-group">
           <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
-          <input type="text" class="form-control input-lg" name="password" placeholder="Palavra-passe"/>
+          <input type="text" class="form-control input-lg r-pass" name="password" placeholder="Palavra-passe"/>
       </div>
       <p>
       </p>
       <h3 class="form-signin-heading">Confirmar palavra-passe</h3>
       <div class="input-group">
       <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
-      <input type="text" class="form-control input-lg" name="password" placeholder="Palavra-passe"/>
+      <input type="text" class="form-control input-lg r-confirm-pass" name="password" placeholder="Palavra-passe"/>
       </div>
       <p>
       </p>
@@ -104,11 +104,11 @@
       <p>
       </p>
       <div class="modal-footer">
-          <div class="category-icon" type="submit">
+          <div class="category-icon r-submit-form" >
               <div class="text-center">
-                <p><font size=6>Submeter<font></p>   
+                <p><font size=6>Submeter<font></p>
               </div>
-          </div>  
+          </div>
       </div>
           </div>
               </div>
@@ -139,5 +139,6 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
