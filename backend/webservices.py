@@ -249,8 +249,7 @@ class StoryWebService(object):
                 return "MySQL Error: %s" % str(e)
         else:
             return return_str
-            
-            
+        
 
 def CORS():
     cherrypy.response.headers["Access-Control-Allow-Origin"] = "*"
