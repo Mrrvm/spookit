@@ -23,7 +23,7 @@ $( '.r-submit-form' ).click(function() {
   var email;
   var conf_pass;
 
-  user = $('.r-email').val();
+  user = $('.r-username').val();
   pass = $('.r-pass').val();
   conf_pass = $('.r-confirm-pass').val();
   email =  $('.r-email').val();
@@ -33,7 +33,15 @@ $( '.r-submit-form' ).click(function() {
 
 
   if( pass == conf_pass ) {
-    // PUTS
+      // PUTS
+      $.ajax({
+	  url: "http://172.17.108.101:9000/users",
+	  type: 'PUT',
+	  success: function(response) {
+	      console.log(response)
+	  },
+	  data: {user: user, password: pass, email: email}
+      });
   } else {
     alert("Passwords do not match");
   }
