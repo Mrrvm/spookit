@@ -115,7 +115,7 @@ class StoriesWebService(object):
                 return_str = return_str[:-1] + "]"
             
                 return return_str
-            return "There is no match in the table 'stories' where title='%s'\n" % title
+            return "There is no match in the table 'stories' where theme='%s'\n" % theme
         except MySQLdb.Error, e:
             try:
                 return "MySQL Error [%d]: %s" % (e.args[0], e.args[1])
