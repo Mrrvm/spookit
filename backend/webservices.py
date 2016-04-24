@@ -19,9 +19,9 @@ class WebServices(object):
 class UserWebService(object):
     exposed = True
     
-    @cherrypy.tools.accept(media = 'application/json')
-    def POST(self, user, password, email, birthday = None, gender = None):
-        query = "INSERT INTO users (userID, password, email, birthday, gender, date) VALUES ('%s', '%s', '%s', %s, %s, '%s')"
+    @cherrypy.tools.accept(media = 'text/plain')
+    def PUT(self, user, password, email, birthday = None, gender = None):
+        query = "INSERT INTO users (userID, password, email, birthday, gender, date, login) VALUES ('%s', '%s', '%s', %s, %s, '%s', %s)"
         
         if not birthday:
             birthday = "NULL"
@@ -33,7 +33,8 @@ class UserWebService(object):
                          email,
                          birthday,
                          gender,
-                         datetime.datetime.now())
+                         datetime.datetime.now(),
+                         0)
         try:
             cur.execute(query)
             db.commit()
@@ -59,8 +60,46 @@ class UserWebService(object):
             except IndexError:
                 return "MySQL Error: %s" % str(e)
 
-    def PUT(self, user):
-        return "NOT IMPLEMENTED!\n"
+    # log_type = 1 => login; log_type = 0 => logout
+    def POST(self, user, log_type, password = None):
+        if int(log_type) == 1:
+            if not password:
+                return "Failure"
+            try:
+                cur.execute("SELECT * FROM users WHERE userID='%s' and password='%s'" % (user, password))
+                results = cur.fetchone()
+                if results:
+                    if not results[8] or isinstance(results[8], str):
+                        cur.execute("UPDATE users SET login=1 WHERE userID='%s'" % user)
+                        db.commit()
+                        return "Success"
+                    elif int(results[8]) == 1:
+                        return "Already logged in"
+                    cur.execute("UPDATE users SET login=1 WHERE userID='%s'" % user)
+                    db.commit()
+                    return "Success"
+                else:
+                    return "No user!"
+            except MySQLdb.Error, e:
+                try:
+                    print "MySQL Error [%d]: %s" % (e.args[0], e.args[1])
+                    return "Failure"
+                except IndexError:
+                    print "MySQL Error: %s" % str(e)
+                    return "Failure"
+        elif int(log_type) == 0:
+            try:
+                cur.execute("UPDATE users SET login=0 WHERE userID='%s'" % user)
+                db.commit()
+                return "Success"
+            except MySQLdb.Error, e:
+                try:
+                    print "MySQL Error [%d]: %s" % (e.args[0], e.args[1])
+                    return "Failure"
+                except IndexError:
+                    print "MySQL Error: %s" % str(e)
+                    return "Failure"
+        return "Failure"
 
     def DELETE(self, user):
         try:
@@ -226,7 +265,7 @@ if __name__ == '__main__':
         '/users': {
             'request.dispatch': cherrypy.dispatch.MethodDispatcher(),
             'tools.response_headers.on': True,
-            'tools.response_headers.headers': [('Content-Type', 'application/json')],
+            'tools.response_headers.headers': [('Content-Type', 'text/plain')],
             'tools.CORS.on': True,
         },
         '/stories': {
