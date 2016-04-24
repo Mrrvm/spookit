@@ -32,6 +32,7 @@
 	transition: all 0.4s;
 	color: white;
 	border-radius: 4px;
+  text-decoration: none;
 }
 
 .category-icon:hover {
@@ -42,7 +43,7 @@
   background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
+  text-decoration: initial;
 }
 
 .category-icon:visited {
@@ -53,6 +54,7 @@
 	transition: all 0.4s;
 	color: white;
 	border-radius: 4px;
+  text-decoration: initial;
 }
 .fa {
   margin-bottom: 10px;
