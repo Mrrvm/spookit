@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
     <link href="css/listing.css" rel="stylesheet">
+    <link href="css/thread.css" rel="stylesheet">
 
   </head>
   <body>
@@ -38,74 +39,40 @@
     </nav>
 
     <div class="container">
-      <div class = button-container>
-      <div class="row text-center">
-        <div class="col-xs-4 category-button">
-          <div class="category-icon">
-          <i class="fa fa-book fa-5x" aria-hidden="true"></i>
-          <p>Histórias</p>
+      <div class="main-thread">
+        <div class= "row">
+          <div class="col-xs-9" id="thread-title">
           </div>
-        </div>
-        <div class="col-xs-4 category-button">
-          <div class="category-icon">
-          <i class="fa fa-film fa-5x" aria-hidden="true"></i>
-          <p>Cultura</p>
-          </div>
-        </div>
-        <div class="col-xs-4 category-button">
-          <div class="category-icon">
-          <i class="fa fa-newspaper-o fa-5x" aria-hidden="true"></i>
-          <p>Actualidade</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row text-center">
-        <div class="col-xs-4 category-button">
-          <div class="category-icon">
-          <i class="fa fa-user fa-5x" aria-hidden="true"></i>
-          <p>Pessoas</p>
-          </div>
-        </div>
-        <div class="col-xs-4 category-button">
-          <div class="category-icon">
-          <i class="fa fa-heart fa-5x" aria-hidden="true"></i>
-          <p>Saúde</p>
-          </div>
-        </div>
-        <div class="col-xs-4 category-button">
-          <div class="category-icon">
-          <i class="fa fa-ellipsis-h fa-5x" aria-hidden="true"></i>
-          <p>Outros</p>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div class="thread-container hidden">
-        <h1 class="thread-container_text"></h1>
-
-        <div class="row board-controls">
-          <div class="col-xs-4" id="new-story-btn">
-            <div class="category-icon">
-              <i class="fa fa-plus fa-controls" aria-hidden="true"> Novo tópico</i>
+          <div class="col-xs-3">
+            <div class="category-icon bk-btn">
+              <i class="fa fa-arrow-circle-left fa-controls" aria-hidden="true"> Voltar</i>
             </div>
           </div>
-          <div class="col-xs-4">
-          </div>
-          <div class="col-xs-4 back-button">
-            <div class="category-icon">
-            <i class="fa fa-arrow-circle-left fa-controls " aria-hidden="true"> Voltar</i>
-          </div>
-        </div>
-        </div>
-        <div class="thread-links">
-
         </div>
       </div>
+      <div class="row">
+        <div class="col-xs-4">
+          <div class="category-icon">
+            <i class="fa fa-play fa-controls" aria-hidden="true"> Reproduzir</i>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="category-icon">
+            <i class="fa fa-pause fa-controls" aria-hidden="true"> Pausar</i>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="category-icon">
+            <i class="fa fa-plus fa-controls " aria-hidden="true"> Continuar história</i>
+          </div>
+        </div>
+      </div>
+      <div class="single-thread-container">
+      </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/listing.js"></script>
+    <script src="js/thread.js"></script>
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 

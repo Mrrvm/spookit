@@ -1,0 +1,47 @@
+.main-thread {
+  border-style: solid;
+  border-color: black;
+  border-radius: 0%;
+  border-width: 3px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+
+.main-thread h1 {
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-weight: 600;
+  font-size: 4em;
+}
+
+.comment {
+  border-style: solid;
+  border-color: black;
+  border-radius: 0%;
+  border-width: 3px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+  font-size: 1.2em;
+}
+
+.comment p {
+  margin-bottom: 0;
+}
+
+.time {
+  color: gray;
+  size: 0.6em;
+  text-align: right;
+  margin-right: 5px; 
+}
+
+.bk-btn {
+  margin-right: 10px;
+}
