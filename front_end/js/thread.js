@@ -7,7 +7,7 @@ $(document).ready(function() {
 	  var json_obj = $.parseJSON(data);//parse JSON
     for (var i in json_obj) {
       if(i == 0) {
-        $('.main-thread').append('<h1>' + json_obj[i].name + '</h1>');
+        $('#thread-title').append('<h1>' + json_obj[i].name + '</h1>');
         $('.main-thread').append('<p>Criado por:<a href="profile#' + json_obj[i].user + '">' + json_obj[i].user + '</p>')
           audios = json_obj[i].audios;
 
@@ -37,3 +37,6 @@ $(document).ready(function() {
 
 });
 
+$( '.bk-btn' ).click(function() {
+  $(location).attr('href', '../front_end/listing.html');
+});
