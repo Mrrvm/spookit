@@ -85,8 +85,41 @@
 .logo {
   margin-top: 15px;
 }
+
 .user_image {
   border-radius: 50%;
   width: 75px;
   height: 75px;
+}
+
+.thread-item {
+  border-style: solid;
+  border-color: black;
+  border-radius: 0%;
+  border-width: 2px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.thread-item:hover {
+  cursor: pointer;
+  background: lightgray;
+}
+
+.thread-item > a {
+  color: black;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.thread-item > a:hover {
+  text-decoration: none;
+
+}
+
+.thread-item > a:visited {
+  text-decoration: none;
+  color: black;
 }
