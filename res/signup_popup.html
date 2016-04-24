@@ -24,40 +24,18 @@
 
   <body>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-      	<div class="row">
-          <div class="col-md-6">
-            <img src="images/logo2.png" alt="image" href="index.html" class="img-responsive">
-          </div>
-          <div class="col-md-6">
-            <h1>Entrar na sua conta</h1>
-            <a href="#" data-toggle="modal" data-target="#PostCommentsModal"><font size=6>Ainda não se registou? Clique aqui</font></a>
-          </div>
-	     </div>
-      </div>
-    </div>
+  <div class="container">
+  <div class="row header" style="text-align:center;color:green">
+  <h3>Bootstrap popups (Responsive)</h3>
+  </div>
+  <div class="row header" style="text-align:center;margin-top:40px;">
+   <a href="#" data-toggle="modal" 
+   data-target="#PostCommentsModal">Post Comments</a></br></br>
+    <a href="#" data-toggle="modal" data-target="#LoginModal">Login</a>
+  </div>
 
 
-    <div class="wrapper">
-      <form class="form-signin">       
-        <h3 class="form-signin-heading">Inserir nome de utilizador</h3>
-          <input type="text" class="form-control" name="username" placeholder="Nome de utilizador" required="" autofocus="" />
-        <h3 class="form-signin-heading">Inserir palavra-passe</h3>
-          <input type="password" class="form-control" name="password" placeholder="Palavra-passe" required=""/>      
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Lembrar-se da minha conta na próxima sessão
-        </label>
-        <div class="category-icon" type="submit">
-          <div class="text-center">
-              <p><font size=6>Submeter<font></p>   
-          </div>
-        </div>   
-      </form>
-    </div>
-
-    <div class="modal fade" id="PostCommentsModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+  <div class="modal fade" id="PostCommentsModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
     <div class="modal-dialog">      
       <div class="modal-content">
         <div class="modal-header">
@@ -115,22 +93,6 @@
           </div>
       </div>
 
-
-    <footer>
-      <div class="jumbotron">
-        <div class="container">
-            <div class="col-md-4">
-                <img src="images/logo.png" alt="image" href="index.html" class="img-responsive">
-            </div>
-            <div class="col-xs-4">
-              <a href="index.html"><font size=5>©2016 Ponto. Acrescente o seu.</font></a>
-            </div>
-            <div class="col-xs-4">
-              <a href="contactar-nos.html"><font size=5><i class="fa fa-envelope fa-1x"> Tem dúvidas? Contacte</font></a></i>
-            </div>
-        </div>
-      </div>
-    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
