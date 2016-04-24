@@ -1,0 +1,125 @@
+.navbar-listing {
+  min-height: 100px;
+}
+
+.thread-container {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.thread-container_text {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 6em;
+  font-weight: 800;
+  margin-top: 20px;
+  height: 53px;
+  line-height: 53px;
+  margin-bottom: 0px;
+}
+
+.category-icon {
+	font-size: 25pt;
+	font-weight: 500;
+	line-height: 20px;
+	padding: 20px 50px;
+	border: none;
+	background: #3eb0f7;
+	transition: all 0.4s;
+	color: white;
+	border-radius: 4px;
+}
+
+.category-icon:hover {
+  cursor: pointer;
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.category-icon:visited {
+	line-height: 20px;
+	padding: 20px 50px;
+	border: none;
+	background: #3eb0f7;
+	transition: all 0.4s;
+	color: white;
+	border-radius: 4px;
+}
+.fa {
+  margin-bottom: 10px;
+}
+
+.fa-navbar {
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 0px;
+}
+
+
+.fa-navbar-user {
+  margin-right: 20px;
+}
+.row {
+  margin-bottom: 30px;
+}
+
+.back-button {
+  font-weight: bold;
+  font-size: 20pt;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  cursor: pointer;
+}
+
+.logo {
+  margin-top: 15px;
+}
+
+.user_image {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+.thread-item {
+  border-style: solid;
+  border-color: black;
+  border-radius: 0%;
+  border-width: 2px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.thread-item:hover {
+  cursor: pointer;
+  background: lightgray;
+}
+
+.thread-item > a {
+  color: black;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.thread-item > a:hover {
+  text-decoration: none;
+
+}
+
+.thread-item > a:visited {
+  text-decoration: none;
+  color: black;
+}

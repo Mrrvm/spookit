@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Ponto - Página inicial</title>
+
+    <!-- Bootstrap core CSS -->
+        <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <link href="css/listing.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  <div class="container">
+  <div class="row header" style="text-align:center;color:green">
+  <h3>Bootstrap popups (Responsive)</h3>
+  </div>
+  <div class="row header" style="text-align:center;margin-top:40px;">
+   <a href="#" data-toggle="modal" 
+   data-target="#PostCommentsModal">Post Comments</a></br></br>
+    <a href="#" data-toggle="modal" data-target="#LoginModal">Login</a>
+  </div>
+
+
+  <div class="modal fade" id="PostCommentsModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">      
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Fechar janela</span></button>
+            <div>
+            <img src="images/logo.png" alt="image" href="index.html" class="img-responsive" align="middle">
+            <hr>
+            <h1 class="modal-title" id="myModalLabel" align="middle">Criar conta</h1>
+            </div>
+        </div>
+    <div class="modal-body">
+      <h3 class="form-signin-heading">Inserir nome de utilizador</h3>
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+          <input type="text" class="form-control input-lg" name="realname" placeholder="Nome e apelido"/>
+      </div>
+      <p>
+      </p>
+      <h3 class="form-signin-heading">Inserir email</h3>
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          <input type="text" class="form-control input-lg" name="email" placeholder="Email"/>
+      </div>
+      <p>
+      </p>
+      <h3 class="form-signin-heading">Inserir palavra-passe</h3>
+      <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+          <input type="text" class="form-control input-lg" name="password" placeholder="Palavra-passe"/>
+      </div>
+      <p>
+      </p>
+      <h3 class="form-signin-heading">Confirmar palavra-passe</h3>
+      <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+      <input type="text" class="form-control input-lg" name="password" placeholder="Palavra-passe"/>
+      </div>
+      <p>
+      </p>
+</textarea>
+      </div>
+      <p>
+      </p>
+      <div class="modal-footer">
+          <div class="category-icon" type="submit">
+              <div class="text-center">
+                <p><font size=6>Submeter<font></p>   
+              </div>
+          </div>  
+      </div>
+          </div>
+              </div>
+          </div>
+      </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>
